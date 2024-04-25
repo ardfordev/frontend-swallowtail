@@ -77,11 +77,14 @@ const CreateSubstation = () => {
           </div>
         </div>
         <Button
+          asChild
           type="submit"
           className="gap-x-2 bg-[#62abd9] text-white hover:bg-[#367fbf]"
         >
-          <Save size={16} />
-          Save
+          <Link href="/dashboard/substation">
+            <Save size={16} />
+            Save
+          </Link>
         </Button>
       </div>
     </div>

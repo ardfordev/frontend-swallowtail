@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
-import { DateRange } from "react-day-picker";
-import { addDays, format } from "date-fns";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+// import React, { useState } from "react";
+// import { DateRange } from "react-day-picker";
+// import { addDays, format } from "date-fns";
+// import {
+//   Popover,
+//   PopoverContent,
+//   PopoverTrigger,
+// } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import {
   BookOpenText,
   CalendarIcon,
@@ -19,15 +19,15 @@ import {
   Search,
   SquarePlus,
 } from "lucide-react";
-import { Calendar } from "@/components/ui/calendar";
+// import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 
 const FeederPage = () => {
-  const [date, setDate] = useState<DateRange | undefined>({
-    from: new Date(),
-    to: addDays(new Date(), 10),
-  });
+  // const [date, setDate] = useState<DateRange | undefined>({
+  //   from: new Date(),
+  //   to: addDays(new Date(), 10),
+  // });
 
   return (
     <div className="flex-1 flex-col overflow-y-auto p-4">
@@ -48,7 +48,7 @@ const FeederPage = () => {
             type="search"
             placeholder="Search"
           />
-          <Popover>
+          {/* <Popover>
             <PopoverTrigger asChild>
               <Button
                 variant={"outline"}
@@ -82,7 +82,7 @@ const FeederPage = () => {
                 numberOfMonths={2}
               />
             </PopoverContent>
-          </Popover>
+          </Popover> */}
           <Button
             type="submit"
             className="bg-[#62abd9] rounded-md text-white text-sm hover:bg-[#367fbf]"

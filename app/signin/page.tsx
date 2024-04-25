@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const SignInPage = () => {
   return (
@@ -43,10 +44,11 @@ const SignInPage = () => {
                   <Input type="password" placeholder="Password" id="password" />
                 </div>
                 <Button
+                  asChild
                   type="submit"
                   className="text-white bg-neutral-800 hover:bg-neutral-500 mt-5"
                 >
-                  Sign in
+                  <Link href="/dashboard">Sign in</Link>
                 </Button>
               </form>
               <p className="text-xs text-center text-gray-500 sm:mt-2">
