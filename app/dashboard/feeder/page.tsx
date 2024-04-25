@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { DateRange } from "react-day-picker";
 import { addDays, format } from "date-fns";
@@ -12,11 +13,11 @@ import { cn } from "@/lib/utils";
 import {
   BookOpenText,
   CalendarIcon,
-  FileText,
   Info,
   MoveLeft,
   MoveRight,
   Search,
+  SquarePlus,
 } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
@@ -30,12 +31,21 @@ const FeederPage = () => {
 
   return (
     <div className="flex-1 flex-col overflow-y-auto p-4">
-      <h2 className="font-semibold mb-4">Feeder</h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="font-semibold">Feeder</h2>
+        <Link
+          href="/dashboard/feeder/create"
+          className="flex items-center space-x-2 px-4 py-2 rounded-md text-white bg-neutral-800 hover:bg-gray-100 hover:text-gray-500"
+        >
+          <SquarePlus size={16} />
+          <span className="text-sm">Create New</span>
+        </Link>
+      </div>
       <div className="mb-4">
         <form className="flex flex-col md:flex-row gap-2 items-center">
           <Input
             className="w-full sm:w-[280px] focus-visible:ring-[#367fbf]"
-            type="text"
+            type="search"
             placeholder="Search"
           />
           <Popover>
@@ -43,7 +53,7 @@ const FeederPage = () => {
               <Button
                 variant={"outline"}
                 className={cn(
-                  "w-full sm:w-[220px] justify-start text-left font-normal focus:border-[#367fbf]",
+                  "w-full sm:w-[240px] justify-start text-left font-normal focus:border-[#367fbf]",
                   !date && "text-muted-foreground"
                 )}
               >
@@ -75,7 +85,7 @@ const FeederPage = () => {
           </Popover>
           <Button
             type="submit"
-            className="bg-[#62abd9] rounded-sm text-white text-sm hover:bg-[#367fbf]"
+            className="bg-[#62abd9] rounded-md text-white text-sm hover:bg-[#367fbf]"
           >
             <Search size={16} strokeWidth={2} color="#c4e5f2" />
           </Button>

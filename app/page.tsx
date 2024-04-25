@@ -106,35 +106,37 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="container rounded-t-3xl mt-10 bg-[#1E1E1E]">
-        <div className="w-full flex py-10 gap-4">
-          <Image src="/logo.png" alt="logo" width={24} height={24} />
-          <p className="font-bold text-white">swallowtail</p>
-        </div>
-        <div className="w-full flex items-center border-t border-[#3b3b3b] justify-between py-10">
-          <div className="grid grid-cols-1 items-center sm:w-1/2 sm:flex sm:justify-between md:w-1/3">
-            <a
-              href="#"
-              className="font-light text-neutral-600 text-xs hover:text-white"
-            >
-              &copy; 2024 swallowtail
-            </a>
-            <a
-              href="#"
-              className="font-light text-neutral-600 text-xs hover:text-white"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="font-light text-neutral-600 text-xs hover:text-white"
-            >
-              Privacy & Cookies policy
-            </a>
+      <div className="rounded-t-3xl mt-10 bg-[#1E1E1E]">
+        <div className="px-8">
+          <div className="w-full flex py-10 gap-4">
+            <Image src="/logo.png" alt="logo" width={24} height={24} />
+            <p className="font-bold text-white">swallowtail</p>
           </div>
-          <p className="text-neutral-500 text-xs md:text-base">
-            ardisuprieadi@proton.me
-          </p>
+          <div className="w-full flex items-center border-t border-[#3b3b3b] justify-between py-10">
+            <div className="grid grid-cols-1 items-center sm:w-1/2 sm:flex sm:justify-between md:w-1/3">
+              <a
+                href="#"
+                className="font-light text-neutral-600 text-xs hover:text-white"
+              >
+                &copy; 2024 swallowtail
+              </a>
+              <a
+                href="#"
+                className="font-light text-neutral-600 text-xs hover:text-white"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="font-light text-neutral-600 text-xs hover:text-white"
+              >
+                Privacy & Cookies policy
+              </a>
+            </div>
+            <p className="text-neutral-500 text-xs md:text-base">
+              ardisuprieadi@proton.me
+            </p>
+          </div>
         </div>
       </div>
     </div>

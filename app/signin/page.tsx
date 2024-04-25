@@ -13,7 +13,7 @@ const SignInPage = () => {
       </div>
       <div className="container">
         <div className="relative w-full h-screen">
-          <div className="absolute m-auto left-0 right-0 top-0 bottom-0 w-full sm:w-96 h-1/2 sm:h-4/6 bg-neutral-100 drop-shadow-xl rounded-xl">
+          <div className="absolute m-auto left-0 right-0 top-0 bottom-0 w-full sm:w-96 h-1/2 sm:h-4/6 max-h-96 bg-neutral-100 drop-shadow-xl rounded-xl">
             <div className="flex flex-col p-5 gap-2">
               <div className="flex w-full justify-center">
                 <Image
